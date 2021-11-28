@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 192.168.0.42:9092
+      group-id: myGroup
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    data:
+      mongodb:
+        url: mongodb://mongo:27017/admin
+server:
+  port: 8081
+
